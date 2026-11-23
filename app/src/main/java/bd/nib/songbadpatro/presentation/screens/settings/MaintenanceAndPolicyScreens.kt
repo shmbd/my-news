@@ -358,9 +358,9 @@ fun PolicyAndAboutScreen(
         PolicyScreenType.ABOUT -> {
             (if (language == AppLanguage.ENGLISH) "About My News (আমার খবর)" else "আমার খবর (My News) সম্পর্কে") to listOf(
                 if (language == AppLanguage.ENGLISH) {
-                    "My News (আমার খবর) — Version ${BuildConfig.VERSION_NAME} (Package: bd.nib.songbadpatro)"
+                    "My News (আমার খবর) — Version ${BuildConfig.VERSION_NAME} (Package: ${BuildConfig.APPLICATION_ID})"
                 } else {
-                    "আমার খবর (My News) — সংস্করণ ${BuildConfig.VERSION_NAME} (প্যাকেজ: bd.nib.songbadpatro)"
+                    "আমার খবর (My News) — সংস্করণ ${BuildConfig.VERSION_NAME} (প্যাকেজ: ${BuildConfig.APPLICATION_ID})"
                 },
                 if (language == AppLanguage.ENGLISH) {
                     "A dedicated Bangladeshi platform for readers, researchers, journalists, academics, policymakers, and students to discover columns, institutional editorials, opinion journalism, and in-depth interviews."

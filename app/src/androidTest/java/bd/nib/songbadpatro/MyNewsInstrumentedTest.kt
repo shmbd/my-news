@@ -14,7 +14,7 @@ class MyNewsInstrumentedTest {
     @Test
     fun verifyPackageAndCutoffConfiguration() {
         val context = InstrumentationRegistry.getInstrumentation().targetContext
-        assertTrue(context.packageName.startsWith("bd.nib.songbadpatro"))
+        assertTrue(context.packageName.startsWith("bd.nib.amarkhobor"))
         assertEquals("2026-11-23", PublicationCutoffConfig.DEFAULT_CUTOFF_ISO_DATE)
     }
 }

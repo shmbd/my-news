@@ -9,7 +9,7 @@
 
 ## 1. Application Overview & Configuration
 - **App Name:** My News (আমার খবর)
-- **Package ID:** `bd.nib.songbadpatro` (Debug suffix: `.debug`)
+- **Package ID:** `bd.nib.amarkhobor` (Debug suffix: `.debug`, coexists cleanly alongside `SongbadPatro`)
 - **SDK Support:** `minSdk = 24` (Android 7.0) | `targetSdk = 35` | `compileSdk = 35` (Android 15)
 - **Default Language:** Bangla (`বাংলা`), with optional `English` UI switch
 - **Timezone:** `Asia/Dhaka` (`+06:00`) via Java Time (`coreLibraryDesugaring`)

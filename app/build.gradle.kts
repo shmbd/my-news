@@ -22,7 +22,7 @@ android {
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "bd.nib.songbadpatro"
+        applicationId = "bd.nib.amarkhobor"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
