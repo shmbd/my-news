@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="bn" dir="ltr" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>আমার খবর (My News) — বাংলাদেশের কলাম, সম্পাদকীয়, মতামত ও সাক্ষাৎকার</title>
+  <meta name="description" content="আমার খবর (My News) — বাংলাদেশের সংবাদপত্র ও ডিজিটাল মাধ্যমের বুদ্ধিবৃত্তিক কলাম, প্রাতিষ্ঠানিক সম্পাদকীয়, মতামত ও সাক্ষাৎকার সংকলন (২৩ নভেম্বর ২০২৬ থেকে চলমান)।" />
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <meta property="og:locale" content="bn_BD" />
+  <meta property="og:site_name" content="আমার খবর (My News)" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="আমার খবর (My News) — বাংলাদেশের কলাম, সম্পাদকীয়, মতামত ও সাক্ষাৎকার" />
+  <meta property="og:description" content="কেবল ২৩ নভেম্বর ২০২৬ বা তার পরে প্রকাশিত বাংলাদেশি পত্রিকার কলাম, সম্পাদকীয়, মতামত ও সাক্ষাৎকার।" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">মূল বিষয়বস্তুতে যান</a>
+
+  <header class="site-header">
+    <div class="container header-bar">
+      <a href="#feed" class="brand-link" id="brandHomeLink">
+        <span class="brand-mark">খ</span>
+        <div>
+          <span class="brand-title" id="brandTitleText">আমার খবর <small>My News</small></span>
+          <span class="brand-sub" id="brandSubText">কলাম • সম্পাদকীয় • মতামত • সাক্ষাৎকার</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="প্রধান নেভিগেশন">
+        <button type="button" class="nav-link active" data-view="feed" id="navFeed">হোম</button>
+        <button type="button" class="nav-link" data-view="COLUMN" id="navColumn">কলাম</button>
+        <button type="button" class="nav-link" data-view="EDITORIAL" id="navEditorial">সম্পাদকীয়</button>
+        <button type="button" class="nav-link" data-view="OPINION" id="navOpinion">মতামত</button>
+        <button type="button" class="nav-link" data-view="INTERVIEW" id="navInterview">সাক্ষাৎকার</button>
+        <button type="button" class="nav-link" data-view="authors" id="navAuthors">লেখক</button>
+        <button type="button" class="nav-link" data-view="saved" id="navSaved">সংরক্ষিত (<span id="savedBadge">০</span>)</button>
+        <button type="button" class="nav-link" data-view="publishers" id="navPublishers">উৎসসমূহ</button>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" id="langBtn" class="ghost-btn" title="Switch Language">EN</button>
+        <button type="button" id="themeBtn" class="ghost-btn" title="Switch Theme">হালকা</button>
+        <a href="https://github.com/shmbd/my-news/actions" target="_blank" rel="noopener noreferrer" class="apk-btn" id="apkHeaderBtn">অ্যাপ ডাউনলোড</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="container page-wrap">
+    <!-- Transparency & Strict Cutoff Strip (matches shmbd.github.io / biobangla editorial style) -->
+    <div class="transparency-strip" role="region" aria-label="সম্পাদকীয় পরিধি ও তারিখ সীমা">
+      <p id="transparencyText">
+        <strong>সম্পাদকীয় পরিধি ও তারিখ সীমা:</strong> এই প্ল্যাটফর্মে সাধারণ সংবাদ বা ব্রেকিং নিউজ সংগৃহীত হয় না। কেবল <strong>২৩ নভেম্বর ২০২৬ (Asia/Dhaka)</strong> বা তার পরে প্রকাশিত বাংলাদেশি সংবাদপত্রের যাচাইকৃত কলাম, প্রাতিষ্ঠানিক সম্পাদকীয়, মতামত ও সাক্ষাৎকার প্রদর্শিত হচ্ছে।
+      </p>
+      <span id="lastSyncBadge" class="sync-pill">হালনাগাদ যাচাই হচ্ছে...</span>
+    </div>
+
+    <!-- VIEW: HOME & CATEGORY FEED -->
+    <div id="sectionFeed">
+      <!-- Featured Hero Story -->
+      <section id="featuredContainer" class="featured-wrap"></section>
+
+      <!-- Trending Topics + Search & Filter Bar -->
+      <section class="search-panel" aria-label="অনুসন্ধান ও ফিল্টার">
+        <div class="tags-row" id="trendingTagsRow"></div>
+        <div class="controls-grid">
+          <input type="search" id="searchInput" placeholder="শিরোনাম, লেখক, সাক্ষাৎকারদাতা বা বিষয় লিখুন..." aria-label="অনুসন্ধান" />
+          <select id="publisherFilter" aria-label="পত্রিকা নির্বাচন">
+            <option value="">সব পত্রিকা</option>
+          </select>
+          <select id="langFilter" aria-label="ভাষা নির্বাচন">
+            <option value="">সব ভাষা</option>
+            <option value="BANGLA">বাংলা</option>
+            <option value="ENGLISH">ইংরেজি (English)</option>
+          </select>
+          <select id="sortFilter" aria-label="ক্রম নির্বাচন">
+            <option value="NEWEST">নতুন থেকে পুরোনো</option>
+            <option value="OLDEST">পুরোনো থেকে নতুন</option>
+            <option value="PUBLISHER">পত্রিকা অনুযায়ী</option>
+            <option value="AUTHOR">লেখক অনুযায়ী</option>
+          </select>
+        </div>
+        <div id="authorActiveFilter" class="active-filter-chip hidden">
+          <span id="authorActiveName"></span>
+          <button type="button" id="clearAuthorBtn" class="ghost-btn">সব লেখক দেখুন ✕</button>
+        </div>
+      </section>
+
+      <!-- 2-Column Editorial Layout: 8-col Main Stream + 4-col Digest & Android App Sidebar -->
+      <div class="editorial-layout">
+        <section class="stream-column" aria-labelledby="streamHeading">
+          <div class="section-head">
+            <h2 id="streamHeading">সাম্প্রতিক কলাম, সম্পাদকীয় ও মতামত</h2>
+            <span id="streamCount" class="count-meta"></span>
+          </div>
+          <div id="articlesList" class="cards-grid"></div>
+        </section>
+
+        <aside class="sidebar-column">
+          <div class="sidebar-card app-download-box">
+            <span class="eyebrow" id="appEyebrow">অ্যান্ড্রয়েড অ্যাপ</span>
+            <h3 id="appBoxTitle">আমার খবর (My News) অ্যাপ</h3>
+            <p id="appBoxDesc">অফলাইন পাঠক মোড (হালকা/সেপিয়া/ডার্ক), বুকমার্ক এবং পছন্দের কলামিস্ট ও কীওয়ার্ড অ্যালার্ট পেতে আপনার অ্যান্ড্রয়েড ফোনে ইনস্টল করুন।</p>
+            <div class="app-meta">প্যাকেজ: <code>bd.nib.amarkhobor</code> • বিজ্ঞাপনমুক্ত</div>
+            <a href="https://github.com/shmbd/my-news/actions" target="_blank" rel="noopener noreferrer" class="primary-btn full-width" id="appDownloadCta">GitHub থেকে APK ডাউনলোড ↗</a>
+          </div>
+
+          <div class="sidebar-card">
+            <h3 class="sidebar-title" id="catSummaryTitle">বিভাগওয়ারী সংকলন</h3>
+            <ul class="cat-stats-list" id="catStatsList"></ul>
+          </div>
+
+          <div class="sidebar-card">
+            <h3 class="sidebar-title" id="topAuthorsTitle">সক্রিয় কলামিস্ট ও লেখক</h3>
+            <div id="sidebarAuthorsList" class="sidebar-authors"></div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <!-- VIEW: AUTHORS & INTERVIEWEES DIRECTORY -->
+    <section id="sectionAuthors" class="hidden">
+      <div class="section-head">
+        <h2 id="authorsPageTitle">কলামিস্ট, লেখক ও সাক্ষাৎকারদাতা ডিরেক্টরি</h2>
+        <span id="authorsCountMeta" class="count-meta"></span>
+      </div>
+      <div class="controls-grid two-col">
+        <input type="search" id="authorSearchInput" placeholder="কলামিস্ট, শিক্ষাবিদ বা প্রতিষ্ঠানের নাম খুঁজুন..." />
+        <select id="authorRoleFilter">
+          <option value="">সবাই (লেখক ও সাক্ষাৎকারদাতা)</option>
+          <option value="AUTHOR">কলামিস্ট ও লেখক</option>
+          <option value="INTERVIEWEE">সাক্ষাৎকারদাতা</option>
+        </select>
+      </div>
+      <div id="authorsDirectoryGrid" class="authors-grid"></div>
+    </section>
+
+    <!-- VIEW: SAVED BOOKMARKS -->
+    <section id="sectionSaved" class="hidden">
+      <div class="section-head">
+        <h2 id="savedPageTitle">সংরক্ষিত লেখা (বুকমার্ক)</h2>
+        <span id="savedCountMeta" class="count-meta"></span>
+      </div>
+      <div id="savedList" class="cards-grid"></div>
+    </section>
+
+    <!-- VIEW: PUBLISHERS & TRANSPARENCY -->
+    <section id="sectionPublishers" class="hidden">
+      <div class="section-head">
+        <h2 id="publishersPageTitle">বাংলাদেশি সংবাদপত্র ও উৎস যাচাই তালিকা</h2>
+        <span id="publishersCountMeta" class="count-meta"></span>
+      </div>
+      <p class="policy-note" id="publishersNote">
+        প্রতিটি উৎসের অফিসিয়াল ফিড ও <code>robots.txt</code> নীতিমালা যাচাই করে তালিকাভুক্ত করা হয়েছে। যেসব পোর্টালে HTTP 403 WAF সীমাবদ্ধতা বা SSL সনদ ত্রুটি রয়েছে সেগুলো স্বচ্ছতার সাথে নিষ্ক্রিয় রাখা হয়েছে।
+      </p>
+      <div id="publishersDirectoryGrid" class="publishers-grid"></div>
+    </section>
+  </main>
+
+  <!-- READER MODAL -->
+  <div id="readerModal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <div class="modal-topbar">
+        <div class="font-btns">
+          <button type="button" id="fontSmallerBtn" class="ghost-btn">অ-</button>
+          <button type="button" id="fontLargerBtn" class="ghost-btn">অ+</button>
+        </div>
+        <div class="modal-right-btns">
+          <button type="button" id="modalBookmarkBtn" class="ghost-btn">সংরক্ষণ</button>
+          <button type="button" id="modalCloseBtn" class="ghost-btn">বন্ধ ✕</button>
+        </div>
+      </div>
+      <div id="modalBadges" class="badges-row"></div>
+      <h2 id="modalTitle" class="modal-headline"></h2>
+      <div id="modalMeta" class="modal-meta"></div>
+      <div id="modalDescription" class="modal-excerpt"></div>
+      <div class="copyright-callout">
+        <p id="modalCopyrightText">
+          কপিরাইট ও নৈতিক সংগ্রহ নীতিমালা অনুসারে এখানে শুধুমাত্র শিরোনাম, লেখক পরিচিতি ও সংক্ষিপ্ত বিবরণ প্রদর্শিত হচ্ছে। সম্পূর্ণ লেখাটি পড়তে মূল সংবাদপত্রের ওয়েবসাইটে যান।
+        </p>
+        <a id="modalOriginalBtn" href="#" target="_blank" rel="noopener noreferrer" class="primary-btn">মূল প্রকাশকের ওয়েবসাইটে সম্পূর্ণ লেখাটি পড়ুন ↗</a>
+      </div>
+      <div id="modalSyndicated" class="syndicated-wrap hidden"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>আমার খবর (My News)</strong> — বাংলাদেশের কলাম, সম্পাদকীয়, মতামত ও সাক্ষাৎকার সংকলন।
+        <div class="footer-sub">প্রকাশের সীমা: ২৩ নভেম্বর ২০২৬ (Asia/Dhaka) থেকে • বিজ্ঞাপন ও ট্র্যাকারমুক্ত • সকল লেখার কপিরাইট মূল প্রকাশকের।</div>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/shmbd/my-news" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+        <a href="https://github.com/shmbd/my-news/actions" target="_blank" rel="noopener noreferrer">Download Android APK</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>

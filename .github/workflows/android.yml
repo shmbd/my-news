@@ -3,8 +3,16 @@ name: Android CI - My News (আমার খবর)
 on:
   push:
     branches: [ main, master, develop ]
+    paths-ignore:
+      - 'docs/**'
+      - 'scripts/**'
+      - '.github/workflows/pages.yml'
   pull_request:
     branches: [ main, master, develop ]
+    paths-ignore:
+      - 'docs/**'
+      - 'scripts/**'
+      - '.github/workflows/pages.yml'
   workflow_dispatch:
 
 permissions:

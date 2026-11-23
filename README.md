@@ -9,6 +9,7 @@
 
 ## 1. Application Overview & Configuration
 - **App Name:** My News (আমার খবর)
+- **Live GitHub Pages Website:** https://shmbd.github.io/my-news/ (`docs/` + `.github/workflows/pages.yml`)
 - **Package ID:** `bd.nib.amarkhobor` (Debug suffix: `.debug`, coexists cleanly alongside `SongbadPatro`)
 - **SDK Support:** `minSdk = 24` (Android 7.0) | `targetSdk = 35` | `compileSdk = 35` (Android 15)
 - **Default Language:** Bangla (`বাংলা`), with optional `English` UI switch

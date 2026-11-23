@@ -1,0 +1,78 @@
+name: Deploy Website & Sync Editorial Feeds (GitHub Pages)
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'docs/**'
+      - 'scripts/**'
+      - 'app/src/main/assets/publisher_registry.json'
+      - '.github/workflows/pages.yml'
+  schedule:
+    - cron: '25 */3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: my-news-github-pages
+  cancel-in-progress: false
+
+jobs:
+  build_and_sync_web:
+    name: Sync Verified Bangladeshi Feeds & Upload Pages Artifact
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run Web Aggregator Unit Tests (Cutoff & Classifier)
+        run: python scripts/test_web_aggregator.py -v
+
+      - name: Sync Live Editorial Feeds (>= 2026-11-23 Asia/Dhaka)
+        run: python scripts/aggregate_web_feeds.py
+
+      - name: Persist Updated Feed JSON on Scheduled/Manual Sync
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: |
+          git config user.name "my-news-editorial[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data/
+          if git diff --cached --quiet; then
+            echo "No new editorial changes to commit."
+          else
+            git commit -m "chore(web): sync verified Bangladeshi editorial feeds"
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Upload GitHub Pages Static Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./docs
+
+  deploy:
+    name: Deploy to https://shmbd.github.io/my-news/
+    needs: build_and_sync_web
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,110 @@
+[
+  {
+    "authorId": "35a4afab90c2a0668ce9",
+    "name": "Pratik",
+    "affiliation": null,
+    "publisherNameBn": "দৈনিক আজাদী",
+    "publisherNameEn": "Dainik Azadi",
+    "role": "AUTHOR",
+    "articleCount": 1
+  },
+  {
+    "authorId": "882f2f781cf600917d09",
+    "name": "আইসিজের রায়ে কূটনীতি বাড়ানোর তাগিদ",
+    "affiliation": null,
+    "publisherNameBn": "সমকাল",
+    "publisherNameEn": "Samakal",
+    "role": "AUTHOR",
+    "articleCount": 1
+  },
+  {
+    "authorId": "ad72eed503d9a3cd1cd3",
+    "name": "আব্দুল্লাহ সেরু",
+    "affiliation": null,
+    "publisherNameBn": "দ্য ডেইলি স্টার (বাংলা)",
+    "publisherNameEn": "The Daily Star Bangla",
+    "role": "AUTHOR",
+    "articleCount": 1
+  },
+  {
+    "authorId": "423dd99219d2ec04ed74",
+    "name": "আলমগীর খান",
+    "affiliation": null,
+    "publisherNameBn": "বিডিনিউজ টোয়েন্টিফোর বাংলা",
+    "publisherNameEn": "bdnews24 Bangla",
+    "role": "AUTHOR",
+    "articleCount": 1
+  },
+  {
+    "authorId": "6c6fc7c377737e00fbe2",
+    "name": "একেএম ইকবাল বাহার ও ড. জেসমিন আক্তার",
+    "affiliation": null,
+    "publisherNameBn": "দ্য ডেইলি স্টার (বাংলা)",
+    "publisherNameEn": "The Daily Star Bangla",
+    "role": "AUTHOR",
+    "articleCount": 1
+  },
+  {
+    "authorId": "45600b8172b1c771562d",
+    "name": "এম এম মুসা",
+    "affiliation": null,
+    "publisherNameBn": "বিডিনিউজ টোয়েন্টিফোর বাংলা",
+    "publisherNameEn": "bdnews24 Bangla",
+    "role": "AUTHOR",
+    "articleCount": 1
+  },
+  {
+    "authorId": "b93751ae5399bc63a5d2",
+    "name": "জীবনমানের স্বস্তি ও শিল্পের টিকে থাকার ভারসাম্যেই আগামীর পোশাক খাত",
+    "affiliation": null,
+    "publisherNameBn": "সমকাল",
+    "publisherNameEn": "Samakal",
+    "role": "AUTHOR",
+    "articleCount": 1
+  },
+  {
+    "authorId": "574ab9fcfacb9eb5c4ab",
+    "name": "বাড়ি ভাড়া নিয়ন্ত্রণে সরকারের অনীহা কেন",
+    "affiliation": null,
+    "publisherNameBn": "সমকাল",
+    "publisherNameEn": "Samakal",
+    "role": "AUTHOR",
+    "articleCount": 1
+  },
+  {
+    "authorId": "9f3e7c50cbd819125d01",
+    "name": "বিধান চন্দ্র পাল",
+    "affiliation": null,
+    "publisherNameBn": "বিডিনিউজ টোয়েন্টিফোর বাংলা",
+    "publisherNameEn": "bdnews24 Bangla",
+    "role": "AUTHOR",
+    "articleCount": 1
+  },
+  {
+    "authorId": "f7276e9404553fc48a92",
+    "name": "মহিউদ্দিন আহমদ",
+    "affiliation": null,
+    "publisherNameBn": "দ্য ডেইলি স্টার (বাংলা)",
+    "publisherNameEn": "The Daily Star Bangla",
+    "role": "AUTHOR",
+    "articleCount": 1
+  },
+  {
+    "authorId": "7f43e2bc3e32d84bbd0b",
+    "name": "মাহফুজ আনাম",
+    "affiliation": null,
+    "publisherNameBn": "দ্য ডেইলি স্টার (বাংলা)",
+    "publisherNameEn": "The Daily Star Bangla",
+    "role": "AUTHOR",
+    "articleCount": 1
+  },
+  {
+    "authorId": "76f42db74f167a178dce",
+    "name": "শি ট্রাম্প পুতিনের বৈঠক: কী পেল বিশ্ব",
+    "affiliation": null,
+    "publisherNameBn": "সমকাল",
+    "publisherNameEn": "Samakal",
+    "role": "AUTHOR",
+    "articleCount": 1
+  }
+]
