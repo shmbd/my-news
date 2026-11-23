@@ -1,0 +1,769 @@
+{
+  "registryVersion": 1,
+  "defaultCutoffIsoDate": "2026-11-23",
+  "timezone": "Asia/Dhaka",
+  "publishers": [
+    {
+      "publisherId": "ittefaq",
+      "nameBn": "দৈনিক ইত্তেফাক",
+      "nameEn": "The Daily Ittefaq",
+      "website": "https://www.ittefaq.com.bd",
+      "logoUrl": "https://cdn.ittefaqbd.com/contents/cache/images/154x154/uploads/media/2021/10/05/25f438e616ffb9b4ea6cac6720f7e99e-615bd6ff7ff0e.png",
+      "language": "BANGLA",
+      "enabled": true,
+      "verificationStatus": "VERIFIED",
+      "robotsNote": "robots.txt Allow: /; official RSS 2.0 opinion & editorial feeds verified 200 OK",
+      "sources": [
+        {
+          "sourceId": "ittefaq_opinion_rss",
+          "nameBn": "দৈনিক ইত্তেফাক — মতামত ও কলাম",
+          "nameEn": "Ittefaq Opinion & Columns",
+          "feedUrl": "https://www.ittefaq.com.bd/feed/opinion",
+          "sectionUrl": "https://www.ittefaq.com.bd/opinion",
+          "defaultCategory": "OPINION",
+          "supportedCategories": ["COLUMN", "EDITORIAL", "OPINION", "INTERVIEW"],
+          "collectionMethod": "RSS_ATOM",
+          "verificationStatus": "VERIFIED",
+          "enabled": true,
+          "parsingRules": {
+            "isDedicatedEditorialFeed": true
+          }
+        },
+        {
+          "sourceId": "ittefaq_editorial_rss",
+          "nameBn": "দৈনিক ইত্তেফাক — সম্পাদকীয়",
+          "nameEn": "Ittefaq Editorial",
+          "feedUrl": "https://www.ittefaq.com.bd/feed/editorial",
+          "sectionUrl": "https://www.ittefaq.com.bd/editorial",
+          "defaultCategory": "EDITORIAL",
+          "supportedCategories": ["EDITORIAL"],
+          "collectionMethod": "RSS_ATOM",
+          "verificationStatus": "VERIFIED",
+          "enabled": true,
+          "parsingRules": {
+            "isDedicatedEditorialFeed": true,
+            "forceOfficialEditorial": true
+          }
+        }
+      ]
+    },
+    {
+      "publisherId": "prothom_alo",
+      "nameBn": "প্রথম আলো",
+      "nameEn": "Prothom Alo",
+      "website": "https://www.prothomalo.com",
+      "logoUrl": "https://media.prothomalo.com/prothomalo/import/default/2016/03/15/714a936bd598937ba32f1fc6f4024818-palo-logo.jpg",
+      "language": "BANGLA",
+      "enabled": true,
+      "verificationStatus": "VERIFIED",
+      "robotsNote": "robots.txt Allow: /; official Atom/RSS feeds (200 OK) + /opinion/* sections verified",
+      "sources": [
+        {
+          "sourceId": "prothom_alo_rss",
+          "nameBn": "প্রথম আলো — মতামত ও সাক্ষাৎকার (অফিসিয়াল ফিড)",
+          "nameEn": "Prothom Alo Official Feed (Filtered to Opinion/Editorial/Column/Interview)",
+          "feedUrl": "https://www.prothomalo.com/stories.rss",
+          "sectionUrl": "https://www.prothomalo.com/opinion",
+          "defaultCategory": null,
+          "supportedCategories": ["COLUMN", "EDITORIAL", "OPINION", "INTERVIEW"],
+          "collectionMethod": "RSS_ATOM",
+          "verificationStatus": "VERIFIED",
+          "enabled": true,
+          "parsingRules": {
+            "isDedicatedEditorialFeed": false
+          }
+        },
+        {
+          "sourceId": "prothom_alo_opinion_section",
+          "nameBn": "প্রথম আলো — মতামত ও সম্পাদকীয় পাতা",
+          "nameEn": "Prothom Alo Opinion Section",
+          "feedUrl": null,
+          "sectionUrl": "https://www.prothomalo.com/opinion",
+          "defaultCategory": "OPINION",
+          "supportedCategories": ["COLUMN", "EDITORIAL", "OPINION", "INTERVIEW"],
+          "collectionMethod": "SECTION_HTML_JSONLD",
+          "verificationStatus": "VERIFIED",
+          "enabled": true,
+          "parsingRules": {
+            "articleLinkPattern": "prothomalo\\.com/opinion/[a-z0-9-]+/[a-z0-9-]+",
+            "isDedicatedEditorialFeed": true
+          }
+        }
+      ]
+    },
+    {
+      "publisherId": "tbs_bangla",
+      "nameBn": "দ্য বিজনেস স্ট্যান্ডার্ড (বাংলা)",
+      "nameEn": "The Business Standard Bangla",
+      "website": "https://www.tbsnews.net/bangla",
+      "logoUrl": null,
+      "language": "BANGLA",
+      "enabled": true,
+      "verificationStatus": "VERIFIED",
+      "robotsNote": "robots.txt permits RSS; official /bangla/opinion/rss.xml verified 200 OK",
+      "sources": [
+        {
+          "sourceId": "tbs_bangla_opinion_rss",
+          "nameBn": "টিবিএস বাংলা — মতামত ও কলাম",
+          "nameEn": "TBS Bangla Opinion & Columns",
+          "feedUrl": "https://www.tbsnews.net/bangla/opinion/rss.xml",
+          "sectionUrl": "https://www.tbsnews.net/bangla/opinion",
+          "defaultCategory": "OPINION",
+          "supportedCategories": ["COLUMN", "EDITORIAL", "OPINION", "INTERVIEW"],
+          "collectionMethod": "RSS_ATOM",
+          "verificationStatus": "VERIFIED",
+          "enabled": true,
+          "parsingRules": {
+            "isDedicatedEditorialFeed": true
+          }
+        }
+      ]
+    },
+    {
+      "publisherId": "tbs_english",
+      "nameBn": "দ্য বিজনেস স্ট্যান্ডার্ড (ইংরেজি)",
+      "nameEn": "The Business Standard",
+      "website": "https://www.tbsnews.net",
+      "logoUrl": null,
+      "language": "ENGLISH",
+      "enabled": true,
+      "verificationStatus": "VERIFIED",
+      "robotsNote": "Official /thoughts/rss.xml & /interviews/rss.xml verified 200 OK",
+      "sources": [
+        {
+          "sourceId": "tbs_en_thoughts_rss",
+          "nameBn": "টিবিএস — থটস ও কলাম",
+          "nameEn": "TBS Thoughts & Commentary",
+          "feedUrl": "https://www.tbsnews.net/thoughts/rss.xml",
+          "sectionUrl": "https://www.tbsnews.net/thoughts",
+          "defaultCategory": "OPINION",
+          "supportedCategories": ["COLUMN", "EDITORIAL", "OPINION"],
+          "collectionMethod": "RSS_ATOM",
+          "verificationStatus": "VERIFIED",
+          "enabled": true,
+          "parsingRules": {
+            "isDedicatedEditorialFeed": true
+          }
+        },
+        {
+          "sourceId": "tbs_en_interviews_rss",
+          "nameBn": "টিবিএস — সাক্ষাৎকার",
+          "nameEn": "TBS Interviews",
+          "feedUrl": "https://www.tbsnews.net/interviews/rss.xml",
+          "sectionUrl": "https://www.tbsnews.net/interviews",
+          "defaultCategory": "INTERVIEW",
+          "supportedCategories": ["INTERVIEW"],
+          "collectionMethod": "RSS_ATOM",
+          "verificationStatus": "VERIFIED",
+          "enabled": true,
+          "parsingRules": {
+            "isDedicatedEditorialFeed": true
+          }
+        }
+      ]
+    },
+    {
+      "publisherId": "desh_rupantor",
+      "nameBn": "দেশ রূপান্তর",
+      "nameEn": "Desh Rupantor",
+      "website": "https://www.deshrupantor.com",
+      "logoUrl": "https://cdn.deshrupantor.net/contents/cache/images/154x154/uploads/media/2023/11/01/756bedac712941f47eb46b3a34b88636-6541866731238.png",
+      "language": "BANGLA",
+      "enabled": true,
+      "verificationStatus": "VERIFIED",
+      "robotsNote": "robots.txt Allow: /; official /feed/opinion (চিন্তা) RSS 2.0 verified 200 OK",
+      "sources": [
+        {
+          "sourceId": "desh_rupantor_opinion_rss",
+          "nameBn": "দেশ রূপান্তর — চিন্তা ও মতামত",
+          "nameEn": "Desh Rupantor Opinion (Chinta)",
+          "feedUrl": "https://www.deshrupantor.com/feed/opinion",
+          "sectionUrl": "https://www.deshrupantor.com/opinion",
+          "defaultCategory": "OPINION",
+          "supportedCategories": ["COLUMN", "EDITORIAL", "OPINION", "INTERVIEW"],
+          "collectionMethod": "RSS_ATOM",
+          "verificationStatus": "VERIFIED",
+          "enabled": true,
+          "parsingRules": {
+            "isDedicatedEditorialFeed": true
+          }
+        }
+      ]
+    },
+    {
+      "publisherId": "daily_star_bangla",
+      "nameBn": "দ্য ডেইলি স্টার (বাংলা)",
+      "nameEn": "The Daily Star Bangla",
+      "website": "https://bangla.thedailystar.net",
+      "logoUrl": null,
+      "language": "BANGLA",
+      "enabled": true,
+      "verificationStatus": "VERIFIED",
+      "robotsNote": "Official RSS feed + /opinion section verified 200 OK",
+      "sources": [
+        {
+          "sourceId": "daily_star_bangla_opinion_sec",
+          "nameBn": "ডেইলি স্টার বাংলা — মতামত পাতা",
+          "nameEn": "Daily Star Bangla Opinion Section",
+          "feedUrl": null,
+          "sectionUrl": "https://bangla.thedailystar.net/opinion",
+          "defaultCategory": "OPINION",
+          "supportedCategories": ["COLUMN", "EDITORIAL", "OPINION", "INTERVIEW"],
+          "collectionMethod": "SECTION_HTML_JSONLD",
+          "verificationStatus": "VERIFIED",
+          "enabled": true,
+          "parsingRules": {
+            "articleLinkPattern": "bangla\\.thedailystar\\.net/opinion/",
+            "isDedicatedEditorialFeed": true
+          }
+        },
+        {
+          "sourceId": "daily_star_bangla_rss",
+          "nameBn": "ডেইলি স্টার বাংলা — অফিসিয়াল ফিড (মতামত ফিল্টারকৃত)",
+          "nameEn": "Daily Star Bangla Official RSS (Editorial Filtered)",
+          "feedUrl": "https://bangla.thedailystar.net/rss.xml",
+          "sectionUrl": "https://bangla.thedailystar.net/opinion",
+          "defaultCategory": null,
+          "supportedCategories": ["COLUMN", "EDITORIAL", "OPINION", "INTERVIEW"],
+          "collectionMethod": "RSS_ATOM",
+          "verificationStatus": "VERIFIED",
+          "enabled": true,
+          "parsingRules": {
+            "isDedicatedEditorialFeed": false
+          }
+        }
+      ]
+    },
+    {
+      "publisherId": "daily_star_en",
+      "nameBn": "দ্য ডেইলি স্টার (ইংরেজি)",
+      "nameEn": "The Daily Star",
+      "website": "https://www.thedailystar.net",
+      "logoUrl": null,
+      "language": "ENGLISH",
+      "enabled": true,
+      "verificationStatus": "VERIFIED",
+      "robotsNote": "Official /opinion/rss.xml & /opinion/editorial/rss.xml verified 200 OK",
+      "sources": [
+        {
+          "sourceId": "daily_star_en_opinion_rss",
+          "nameBn": "দ্য ডেইলি স্টার — মতামত ও কলাম",
+          "nameEn": "The Daily Star Opinion & Views",
+          "feedUrl": "https://www.thedailystar.net/opinion/rss.xml",
+          "sectionUrl": "https://www.thedailystar.net/opinion",
+          "defaultCategory": "OPINION",
+          "supportedCategories": ["COLUMN", "OPINION", "INTERVIEW"],
+          "collectionMethod": "RSS_ATOM",
+          "verificationStatus": "VERIFIED",
+          "enabled": true,
+          "parsingRules": {
+            "isDedicatedEditorialFeed": true
+          }
+        },
+        {
+          "sourceId": "daily_star_en_editorial_rss",
+          "nameBn": "দ্য ডেইলি স্টার — সম্পাদকীয়",
+          "nameEn": "The Daily Star Editorial",
+          "feedUrl": "https://www.thedailystar.net/opinion/editorial/rss.xml",
+          "sectionUrl": "https://www.thedailystar.net/opinion/editorial",
+          "defaultCategory": "EDITORIAL",
+          "supportedCategories": ["EDITORIAL"],
+          "collectionMethod": "RSS_ATOM",
+          "verificationStatus": "VERIFIED",
+          "enabled": true,
+          "parsingRules": {
+            "isDedicatedEditorialFeed": true,
+            "forceOfficialEditorial": true
+          }
+        }
+      ]
+    },
+    {
+      "publisherId": "dhaka_tribune",
+      "nameBn": "ঢাকা ট্রিবিউন",
+      "nameEn": "Dhaka Tribune",
+      "website": "https://www.dhakatribune.com",
+      "logoUrl": "https://ecdn.dhakatribune.net/contents/cache/images/154x154/uploads/media/2023/05/28/1280px-Dhaka_Tribune_Logo.svg-1-a9e61c86dded62d74300fef48fee558f.png",
+      "language": "ENGLISH",
+      "enabled": true,
+      "verificationStatus": "VERIFIED",
+      "robotsNote": "robots.txt Allow: /; official /feed/opinion RSS 2.0 verified 200 OK",
+      "sources": [
+        {
+          "sourceId": "dhaka_tribune_opinion_rss",
+          "nameBn": "ঢাকা ট্রিবিউন — মতামত ও সম্পাদকীয়",
+          "nameEn": "Dhaka Tribune Opinion & Editorial",
+          "feedUrl": "https://www.dhakatribune.com/feed/opinion",
+          "sectionUrl": "https://www.dhakatribune.com/opinion",
+          "defaultCategory": "OPINION",
+          "supportedCategories": ["COLUMN", "EDITORIAL", "OPINION", "INTERVIEW"],
+          "collectionMethod": "RSS_ATOM",
+          "verificationStatus": "VERIFIED",
+          "enabled": true,
+          "parsingRules": {
+            "isDedicatedEditorialFeed": true
+          }
+        }
+      ]
+    },
+    {
+      "publisherId": "sarabangla",
+      "nameBn": "সারাবাংলা",
+      "nameEn": "Sarabangla",
+      "website": "https://sarabangla.net",
+      "logoUrl": null,
+      "language": "BANGLA",
+      "enabled": true,
+      "verificationStatus": "VERIFIED",
+      "robotsNote": "robots.txt permits public feeds; /category/opinion/feed/ & /category/interview/feed/ verified 200 OK",
+      "sources": [
+        {
+          "sourceId": "sarabangla_opinion_rss",
+          "nameBn": "সারাবাংলা — মতামত ও কলাম",
+          "nameEn": "Sarabangla Opinion",
+          "feedUrl": "https://sarabangla.net/category/opinion/feed/",
+          "sectionUrl": "https://sarabangla.net/category/opinion/",
+          "defaultCategory": "OPINION",
+          "supportedCategories": ["COLUMN", "EDITORIAL", "OPINION"],
+          "collectionMethod": "RSS_ATOM",
+          "verificationStatus": "VERIFIED",
+          "enabled": true,
+          "parsingRules": {
+            "isDedicatedEditorialFeed": true
+          }
+        },
+        {
+          "sourceId": "sarabangla_interview_rss",
+          "nameBn": "সারাবাংলা — সাক্ষাৎকার",
+          "nameEn": "Sarabangla Interviews",
+          "feedUrl": "https://sarabangla.net/category/interview/feed/",
+          "sectionUrl": "https://sarabangla.net/category/interview/",
+          "defaultCategory": "INTERVIEW",
+          "supportedCategories": ["INTERVIEW"],
+          "collectionMethod": "RSS_ATOM",
+          "verificationStatus": "VERIFIED",
+          "enabled": true,
+          "parsingRules": {
+            "isDedicatedEditorialFeed": true
+          }
+        }
+      ]
+    },
+    {
+      "publisherId": "dainik_azadi",
+      "nameBn": "দৈনিক আজাদী",
+      "nameEn": "Dainik Azadi",
+      "website": "https://dainikazadi.net",
+      "logoUrl": null,
+      "language": "BANGLA",
+      "enabled": true,
+      "verificationStatus": "VERIFIED",
+      "robotsNote": "robots.txt Disallow: (empty); /category/editorial/feed/ verified 200 OK",
+      "sources": [
+        {
+          "sourceId": "dainik_azadi_editorial_rss",
+          "nameBn": "দৈনিক আজাদী — সম্পাদকীয় ও উপসম্পাদকীয়",
+          "nameEn": "Dainik Azadi Editorial & Sub-Editorial",
+          "feedUrl": "https://dainikazadi.net/category/editorial/feed/",
+          "sectionUrl": "https://dainikazadi.net/category/editorial/",
+          "defaultCategory": "EDITORIAL",
+          "supportedCategories": ["EDITORIAL", "COLUMN", "OPINION"],
+          "collectionMethod": "RSS_ATOM",
+          "verificationStatus": "VERIFIED",
+          "enabled": true,
+          "parsingRules": {
+            "isDedicatedEditorialFeed": true
+          }
+        }
+      ]
+    },
+    {
+      "publisherId": "dainik_purbokone",
+      "nameBn": "দৈনিক পূর্বকোণ",
+      "nameEn": "Dainik Purbokone",
+      "website": "https://dainikpurbokone.net",
+      "logoUrl": null,
+      "language": "BANGLA",
+      "enabled": true,
+      "verificationStatus": "VERIFIED",
+      "robotsNote": "robots.txt Disallow: (empty); /category/editorial/feed/ verified 200 OK",
+      "sources": [
+        {
+          "sourceId": "dainik_purbokone_editorial_rss",
+          "nameBn": "দৈনিক পূর্বকোণ — সম্পাদকীয় ও কলাম",
+          "nameEn": "Dainik Purbokone Editorial & Columns",
+          "feedUrl": "https://dainikpurbokone.net/category/editorial/feed/",
+          "sectionUrl": "https://dainikpurbokone.net/category/editorial/",
+          "defaultCategory": "EDITORIAL",
+          "supportedCategories": ["EDITORIAL", "COLUMN", "OPINION"],
+          "collectionMethod": "RSS_ATOM",
+          "verificationStatus": "VERIFIED",
+          "enabled": true,
+          "parsingRules": {
+            "isDedicatedEditorialFeed": true
+          }
+        }
+      ]
+    },
+    {
+      "publisherId": "ajker_patrika",
+      "nameBn": "আজকের পত্রিকা",
+      "nameEn": "Ajker Patrika",
+      "website": "https://www.ajkerpatrika.com",
+      "logoUrl": null,
+      "language": "BANGLA",
+      "enabled": true,
+      "verificationStatus": "VERIFIED",
+      "robotsNote": "robots.txt Allow: /; /feed RSS 200 OK + /op-ed/editorial verified 200 OK",
+      "sources": [
+        {
+          "sourceId": "ajker_patrika_feed",
+          "nameBn": "আজকের পত্রিকা — মতামত ও সম্পাদকীয় (অফিসিয়াল ফিড)",
+          "nameEn": "Ajker Patrika Official RSS (Editorial Filtered)",
+          "feedUrl": "https://www.ajkerpatrika.com/feed",
+          "sectionUrl": "https://www.ajkerpatrika.com/op-ed/editorial",
+          "defaultCategory": null,
+          "supportedCategories": ["COLUMN", "EDITORIAL", "OPINION", "INTERVIEW"],
+          "collectionMethod": "RSS_ATOM",
+          "verificationStatus": "VERIFIED",
+          "enabled": true,
+          "parsingRules": {
+            "isDedicatedEditorialFeed": false
+          }
+        },
+        {
+          "sourceId": "ajker_patrika_editorial_sec",
+          "nameBn": "আজকের পত্রিকা — সম্পাদকীয় পাতা",
+          "nameEn": "Ajker Patrika Editorial Section",
+          "feedUrl": null,
+          "sectionUrl": "https://www.ajkerpatrika.com/op-ed/editorial",
+          "defaultCategory": "EDITORIAL",
+          "supportedCategories": ["EDITORIAL", "COLUMN", "OPINION"],
+          "collectionMethod": "SECTION_HTML_JSONLD",
+          "verificationStatus": "VERIFIED",
+          "enabled": true,
+          "parsingRules": {
+            "articleLinkPattern": "ajkerpatrika\\.com/op-ed/",
+            "isDedicatedEditorialFeed": true
+          }
+        }
+      ]
+    },
+    {
+      "publisherId": "samakal",
+      "nameBn": "সমকাল",
+      "nameEn": "Samakal",
+      "website": "https://samakal.com",
+      "logoUrl": "https://samakal.com/frontend/media/common/logo-fb.png",
+      "language": "BANGLA",
+      "enabled": true,
+      "verificationStatus": "VERIFIED",
+      "robotsNote": "robots.txt Allow: /; /opinion JSON-LD section verified 200 OK",
+      "sources": [
+        {
+          "sourceId": "samakal_opinion_sec",
+          "nameBn": "সমকাল — মতামত ও কলাম",
+          "nameEn": "Samakal Opinion & Columns",
+          "feedUrl": null,
+          "sectionUrl": "https://samakal.com/opinion",
+          "defaultCategory": "OPINION",
+          "supportedCategories": ["COLUMN", "EDITORIAL", "OPINION", "INTERVIEW"],
+          "collectionMethod": "SECTION_HTML_JSONLD",
+          "verificationStatus": "VERIFIED",
+          "enabled": true,
+          "parsingRules": {
+            "articleLinkPattern": "samakal\\.com/opinion/article/",
+            "isDedicatedEditorialFeed": true
+          }
+        }
+      ]
+    },
+    {
+      "publisherId": "new_age",
+      "nameBn": "নিউ এজ",
+      "nameEn": "New Age",
+      "website": "https://www.newagebd.net",
+      "logoUrl": null,
+      "language": "ENGLISH",
+      "enabled": true,
+      "verificationStatus": "VERIFIED",
+      "robotsNote": "robots.txt Allow: / (Disallow: /print/); /articlelist/25/editorial verified 200 OK",
+      "sources": [
+        {
+          "sourceId": "new_age_editorial_sec",
+          "nameBn": "নিউ এজ — সম্পাদকীয় ও মতামত",
+          "nameEn": "New Age Editorial",
+          "feedUrl": null,
+          "sectionUrl": "https://www.newagebd.net/articlelist/25/editorial",
+          "defaultCategory": "EDITORIAL",
+          "supportedCategories": ["EDITORIAL", "OPINION"],
+          "collectionMethod": "SECTION_HTML_JSONLD",
+          "verificationStatus": "VERIFIED",
+          "enabled": true,
+          "parsingRules": {
+            "articleLinkPattern": "newagebd\\.net/post/(editorial|opinion)/",
+            "excludeLinkPattern": "/print/",
+            "isDedicatedEditorialFeed": true
+          }
+        }
+      ]
+    },
+    {
+      "publisherId": "bonik_barta",
+      "nameBn": "বণিক বার্তা",
+      "nameEn": "Bonik Barta",
+      "website": "https://bonikbarta.com",
+      "logoUrl": null,
+      "language": "BANGLA",
+      "enabled": true,
+      "verificationStatus": "VERIFIED",
+      "robotsNote": "robots.txt Allow: /; /editorial section verified 200 OK",
+      "sources": [
+        {
+          "sourceId": "bonik_barta_editorial_sec",
+          "nameBn": "বণিক বার্তা — সম্পাদকীয় ও মতামত",
+          "nameEn": "Bonik Barta Editorial & Opinion",
+          "feedUrl": null,
+          "sectionUrl": "https://bonikbarta.com/editorial",
+          "defaultCategory": "OPINION",
+          "supportedCategories": ["COLUMN", "EDITORIAL", "OPINION", "INTERVIEW"],
+          "collectionMethod": "SECTION_HTML_JSONLD",
+          "verificationStatus": "VERIFIED",
+          "enabled": true,
+          "parsingRules": {
+            "articleLinkPattern": "bonikbarta\\.com/editorial/",
+            "isDedicatedEditorialFeed": true
+          }
+        }
+      ]
+    },
+    {
+      "publisherId": "manab_zamin",
+      "nameBn": "মানবজমিন",
+      "nameEn": "Daily Manab Zamin",
+      "website": "https://mzamin.com",
+      "logoUrl": null,
+      "language": "BANGLA",
+      "enabled": true,
+      "verificationStatus": "VERIFIED",
+      "robotsNote": "robots.txt permits /category/ and /article.php; মত-মতান্তর section verified 200 OK",
+      "sources": [
+        {
+          "sourceId": "manab_zamin_opinion_sec",
+          "nameBn": "মানবজমিন — মত-মতান্তর",
+          "nameEn": "Manab Zamin Opinion",
+          "feedUrl": null,
+          "sectionUrl": "https://www.mzamin.com/category/%E0%A6%AE%E0%A6%A4-%E0%A6%AE%E0%A6%A4%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A6%B0",
+          "defaultCategory": "OPINION",
+          "supportedCategories": ["COLUMN", "EDITORIAL", "OPINION"],
+          "collectionMethod": "SECTION_HTML_JSONLD",
+          "verificationStatus": "VERIFIED",
+          "enabled": true,
+          "parsingRules": {
+            "articleLinkPattern": "mzamin\\.com/article\\.php\\?mzamin=",
+            "isDedicatedEditorialFeed": true
+          }
+        }
+      ]
+    },
+    {
+      "publisherId": "janakantha",
+      "nameBn": "দৈনিক জনকণ্ঠ",
+      "nameEn": "Daily Janakantha",
+      "website": "https://www.dailyjanakantha.com",
+      "logoUrl": null,
+      "language": "BANGLA",
+      "enabled": true,
+      "verificationStatus": "VERIFIED",
+      "robotsNote": "robots.txt Allow: /; /opinion/ section verified 200 OK",
+      "sources": [
+        {
+          "sourceId": "janakantha_opinion_sec",
+          "nameBn": "দৈনিক জনকণ্ঠ — মতামত ও সম্পাদকীয়",
+          "nameEn": "Daily Janakantha Opinion",
+          "feedUrl": null,
+          "sectionUrl": "https://www.dailyjanakantha.com/opinion/",
+          "defaultCategory": "OPINION",
+          "supportedCategories": ["COLUMN", "EDITORIAL", "OPINION"],
+          "collectionMethod": "SECTION_HTML_JSONLD",
+          "verificationStatus": "VERIFIED",
+          "enabled": true,
+          "parsingRules": {
+            "articleLinkPattern": "dailyjanakantha\\.com/opinion/",
+            "isDedicatedEditorialFeed": true
+          }
+        }
+      ]
+    },
+    {
+      "publisherId": "dainik_sangbad",
+      "nameBn": "দৈনিক সংবাদ",
+      "nameEn": "The Daily Sangbad",
+      "website": "https://sangbad.net.bd",
+      "logoUrl": null,
+      "language": "BANGLA",
+      "enabled": true,
+      "verificationStatus": "VERIFIED",
+      "robotsNote": "robots.txt Allow: /; /news/opinion/ JSON-LD section verified 200 OK",
+      "sources": [
+        {
+          "sourceId": "dainik_sangbad_opinion_sec",
+          "nameBn": "দৈনিক সংবাদ — মতামত ও সম্পাদকীয়",
+          "nameEn": "Daily Sangbad Opinion",
+          "feedUrl": null,
+          "sectionUrl": "https://sangbad.net.bd/news/opinion/",
+          "defaultCategory": "OPINION",
+          "supportedCategories": ["COLUMN", "EDITORIAL", "OPINION"],
+          "collectionMethod": "SECTION_HTML_JSONLD",
+          "verificationStatus": "VERIFIED",
+          "enabled": true,
+          "parsingRules": {
+            "articleLinkPattern": "sangbad\\.net(\\.bd)?/news/opinion/",
+            "isDedicatedEditorialFeed": true
+          }
+        }
+      ]
+    },
+    {
+      "publisherId": "bdnews24_bangla",
+      "nameBn": "বিডিনিউজ টোয়েন্টিফোর বাংলা",
+      "nameEn": "bdnews24 Bangla",
+      "website": "https://bangla.bdnews24.com",
+      "logoUrl": null,
+      "language": "BANGLA",
+      "enabled": true,
+      "verificationStatus": "VERIFIED",
+      "robotsNote": "robots.txt User-agent: * Disallow: (empty); /opinion JSON-LD section verified 200 OK",
+      "sources": [
+        {
+          "sourceId": "bdnews24_bangla_opinion_sec",
+          "nameBn": "বিডিনিউজ২৪ বাংলা — মতামত",
+          "nameEn": "bdnews24 Bangla Opinion",
+          "feedUrl": null,
+          "sectionUrl": "https://bangla.bdnews24.com/opinion",
+          "defaultCategory": "OPINION",
+          "supportedCategories": ["COLUMN", "OPINION", "INTERVIEW"],
+          "collectionMethod": "SECTION_HTML_JSONLD",
+          "verificationStatus": "VERIFIED",
+          "enabled": true,
+          "parsingRules": {
+            "articleLinkPattern": "bangla\\.bdnews24\\.com/opinion/",
+            "isDedicatedEditorialFeed": true
+          }
+        }
+      ]
+    },
+    {
+      "publisherId": "kaler_kantho",
+      "nameBn": "কালের কণ্ঠ",
+      "nameEn": "Kaler Kantho",
+      "website": "https://www.kalerkantho.com",
+      "logoUrl": null,
+      "language": "BANGLA",
+      "enabled": false,
+      "verificationStatus": "REQUIRES_VERIFICATION",
+      "robotsNote": "Live verification returned HTTP 403 WAF/access restriction on /rss.xml and /online/muktadhara; disabled by default.",
+      "sources": [
+        {
+          "sourceId": "kaler_kantho_muktadhara",
+          "nameBn": "কালের কণ্ঠ — মুক্তধারা (যাচাই প্রয়োজন: HTTP 403)",
+          "nameEn": "Kaler Kantho Opinion (HTTP 403 Restricted)",
+          "feedUrl": "https://www.kalerkantho.com/rss.xml",
+          "sectionUrl": "https://www.kalerkantho.com/online/muktadhara",
+          "defaultCategory": "OPINION",
+          "supportedCategories": ["COLUMN", "EDITORIAL", "OPINION"],
+          "collectionMethod": "RSS_ATOM",
+          "verificationStatus": "REQUIRES_VERIFICATION",
+          "enabled": false,
+          "parsingRules": {
+            "isDedicatedEditorialFeed": false
+          }
+        }
+      ]
+    },
+    {
+      "publisherId": "jugantor",
+      "nameBn": "দৈনিক যুগান্তর",
+      "nameEn": "Daily Jugantor",
+      "website": "https://www.jugantor.com",
+      "logoUrl": null,
+      "language": "BANGLA",
+      "enabled": false,
+      "verificationStatus": "REQUIRES_VERIFICATION",
+      "robotsNote": "Live verification returned HTTP 403 WAF/access restriction on /feed/rss.xml and /todays-paper/editorial; disabled by default.",
+      "sources": [
+        {
+          "sourceId": "jugantor_editorial",
+          "nameBn": "যুগান্তর — সম্পাদকীয় ও উপসম্পাদকীয় (যাচাই প্রয়োজন: HTTP 403)",
+          "nameEn": "Jugantor Editorial (HTTP 403 Restricted)",
+          "feedUrl": "https://www.jugantor.com/feed/rss.xml",
+          "sectionUrl": "https://www.jugantor.com/todays-paper/editorial",
+          "defaultCategory": "EDITORIAL",
+          "supportedCategories": ["EDITORIAL", "COLUMN", "OPINION"],
+          "collectionMethod": "RSS_ATOM",
+          "verificationStatus": "REQUIRES_VERIFICATION",
+          "enabled": false,
+          "parsingRules": {
+            "isDedicatedEditorialFeed": false
+          }
+        }
+      ]
+    },
+    {
+      "publisherId": "bd_pratidin",
+      "nameBn": "বাংলাদেশ প্রতিদিন",
+      "nameEn": "Bangladesh Pratidin",
+      "website": "https://www.bd-pratidin.com",
+      "logoUrl": null,
+      "language": "BANGLA",
+      "enabled": false,
+      "verificationStatus": "REQUIRES_VERIFICATION",
+      "robotsNote": "Live verification returned HTTP 403 access restriction on /robots.txt, /rss.xml, and /editorial; disabled by default.",
+      "sources": [
+        {
+          "sourceId": "bd_pratidin_editorial",
+          "nameBn": "বাংলাদেশ প্রতিদিন — সম্পাদকীয় (যাচাই প্রয়োজন: HTTP 403)",
+          "nameEn": "Bangladesh Pratidin Editorial (HTTP 403 Restricted)",
+          "feedUrl": "https://www.bd-pratidin.com/rss.xml",
+          "sectionUrl": "https://www.bd-pratidin.com/editorial",
+          "defaultCategory": "EDITORIAL",
+          "supportedCategories": ["EDITORIAL", "COLUMN", "OPINION"],
+          "collectionMethod": "RSS_ATOM",
+          "verificationStatus": "REQUIRES_VERIFICATION",
+          "enabled": false,
+          "parsingRules": {
+            "isDedicatedEditorialFeed": false
+          }
+        }
+      ]
+    },
+    {
+      "publisherId": "naya_diganta",
+      "nameBn": "দৈনিক নয়া দিগন্ত",
+      "nameEn": "Daily Naya Diganta",
+      "website": "https://www.dailynayadiganta.com",
+      "logoUrl": null,
+      "language": "BANGLA",
+      "enabled": false,
+      "verificationStatus": "REQUIRES_VERIFICATION",
+      "robotsNote": "Live verification encountered TLS/SSL certificate verification failure; disabled by default until valid HTTPS certificate is verified.",
+      "sources": [
+        {
+          "sourceId": "naya_diganta_subeditorial",
+          "nameBn": "দৈনিক নয়া দিগন্ত — উপসম্পাদকীয় (SSL যাচাই প্রয়োজন)",
+          "nameEn": "Daily Naya Diganta Sub-Editorial (SSL Verification Required)",
+          "feedUrl": null,
+          "sectionUrl": "https://www.dailynayadiganta.com/sub-editorial",
+          "defaultCategory": "OPINION",
+          "supportedCategories": ["COLUMN", "EDITORIAL", "OPINION"],
+          "collectionMethod": "SECTION_HTML_JSONLD",
+          "verificationStatus": "REQUIRES_VERIFICATION",
+          "enabled": false,
+          "parsingRules": {
+            "isDedicatedEditorialFeed": true
+          }
+        }
+      ]
+    }
+  ]
+}

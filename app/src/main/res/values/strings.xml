@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">আমার খবর (My News)</string>
+    <string name="app_tagline">বাংলাদেশের সম্পাদকীয়, মতামত, কলাম ও সাক্ষাৎকার সংকলন</string>
+    <string name="nav_home">হোম</string>
+    <string name="nav_categories">বিভাগ</string>
+    <string name="nav_authors">লেখক</string>
+    <string name="nav_saved">সংরক্ষিত</string>
+    <string name="cat_column">কলাম</string>
+    <string name="cat_editorial">সম্পাদকীয়</string>
+    <string name="cat_opinion">মতামত</string>
+    <string name="cat_interview">সাক্ষাৎকার</string>
+    <string name="channel_editorial_name">নতুন সম্পাদকীয় ও কলাম সতর্কতা</string>
+    <string name="channel_editorial_desc">নতুন প্রকাশিত কলাম, সম্পাদকীয়, মতামত ও সাক্ষাৎকারের বিজ্ঞপ্তি</string>
+    <string name="channel_keyword_name">লেখক ও কীওয়ার্ড অ্যালার্ট</string>
+    <string name="channel_keyword_desc">পছন্দের লেখক, প্রকাশক ও কীওয়ার্ডভিত্তিক নতুন লেখার বিজ্ঞপ্তি</string>
+</resources>

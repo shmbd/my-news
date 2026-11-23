@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My News (আমার খবর)</string>
+    <string name="app_tagline">Bangladesh Editorial, Opinion, Column &amp; Interview Aggregator</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_categories">Categories</string>
+    <string name="nav_authors">Authors</string>
+    <string name="nav_saved">Saved</string>
+    <string name="cat_column">Columns</string>
+    <string name="cat_editorial">Editorials</string>
+    <string name="cat_opinion">Opinions</string>
+    <string name="cat_interview">Interviews</string>
+    <string name="channel_editorial_name">New Editorial &amp; Column Alerts</string>
+    <string name="channel_editorial_desc">Notifications for newly published columns, editorials, opinions, and interviews</string>
+    <string name="channel_keyword_name">Author &amp; Keyword Alerts</string>
+    <string name="channel_keyword_desc">Notifications matching preferred authors, publishers, and keywords</string>
+</resources>
