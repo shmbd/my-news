@@ -6,7 +6,7 @@
     "publisherNameBn": "দৈনিক আজাদী",
     "publisherNameEn": "Dainik Azadi",
     "role": "AUTHOR",
-    "articleCount": 1
+    "articleCount": 2
   },
   {
     "authorId": "882f2f781cf600917d09",
@@ -63,6 +63,15 @@
     "articleCount": 1
   },
   {
+    "authorId": "7ed5c726a53b60df8424",
+    "name": "পপি দেবী থাপা",
+    "affiliation": null,
+    "publisherNameBn": "বিডিনিউজ টোয়েন্টিফোর বাংলা",
+    "publisherNameEn": "bdnews24 Bangla",
+    "role": "AUTHOR",
+    "articleCount": 1
+  },
+  {
     "authorId": "574ab9fcfacb9eb5c4ab",
     "name": "বাড়ি ভাড়া নিয়ন্ত্রণে সরকারের অনীহা কেন",
     "affiliation": null,
@@ -74,6 +83,15 @@
   {
     "authorId": "9f3e7c50cbd819125d01",
     "name": "বিধান চন্দ্র পাল",
+    "affiliation": null,
+    "publisherNameBn": "বিডিনিউজ টোয়েন্টিফোর বাংলা",
+    "publisherNameEn": "bdnews24 Bangla",
+    "role": "AUTHOR",
+    "articleCount": 1
+  },
+  {
+    "authorId": "b48a7a758a3d9f4fda82",
+    "name": "মনজুরুল হান্নান খান",
     "affiliation": null,
     "publisherNameBn": "বিডিনিউজ টোয়েন্টিফোর বাংলা",
     "publisherNameEn": "bdnews24 Bangla",
