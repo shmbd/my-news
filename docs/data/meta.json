@@ -3,19 +3,19 @@
   "packageId": "bd.nib.amarkhobor",
   "cutoffIsoDate": "2026-11-23",
   "timezone": "Asia/Dhaka",
-  "lastSyncedIsoDhaka": "2026-11-24T16:08:23+06:00",
-  "totalPublishedArticles": 32,
+  "lastSyncedIsoDhaka": "2026-11-25T04:37:58+06:00",
+  "totalPublishedArticles": 36,
   "categoryCounts": {
     "COLUMN": 2,
     "EDITORIAL": 2,
-    "OPINION": 28,
+    "OPINION": 32,
     "INTERVIEW": 0
   },
-  "authorCount": 14,
+  "authorCount": 15,
   "syncStats": {
     "sourcesAttempted": 26,
     "sourcesSucceeded": 23,
-    "rejectedPreCutoff": 165,
-    "rejectedNonEditorial": 24
+    "rejectedPreCutoff": 162,
+    "rejectedNonEditorial": 36
   }
 }
