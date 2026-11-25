@@ -9,6 +9,15 @@
     "articleCount": 3
   },
   {
+    "authorId": "7a303934b7fafb58a965",
+    "name": "তানিম আহমেদ",
+    "affiliation": null,
+    "publisherNameBn": "দ্য ডেইলি স্টার (বাংলা)",
+    "publisherNameEn": "The Daily Star Bangla",
+    "role": "AUTHOR",
+    "articleCount": 2
+  },
+  {
     "authorId": "882f2f781cf600917d09",
     "name": "আইসিজের রায়ে কূটনীতি বাড়ানোর তাগিদ",
     "affiliation": null,
@@ -23,6 +32,15 @@
     "affiliation": null,
     "publisherNameBn": "দ্য ডেইলি স্টার (বাংলা)",
     "publisherNameEn": "The Daily Star Bangla",
+    "role": "AUTHOR",
+    "articleCount": 1
+  },
+  {
+    "authorId": "ab9bf1fb02812ad91b63",
+    "name": "আমীন আল রশীদ",
+    "affiliation": null,
+    "publisherNameBn": "বিডিনিউজ টোয়েন্টিফোর বাংলা",
+    "publisherNameEn": "bdnews24 Bangla",
     "role": "AUTHOR",
     "articleCount": 1
   },
@@ -72,8 +90,8 @@
     "articleCount": 1
   },
   {
-    "authorId": "7a303934b7fafb58a965",
-    "name": "তানিম আহমেদ",
+    "authorId": "3ada772b41aa96e1c1f0",
+    "name": "ডেভিড বার্গম্যান",
     "affiliation": null,
     "publisherNameBn": "দ্য ডেইলি স্টার (বাংলা)",
     "publisherNameEn": "The Daily Star Bangla",
@@ -86,6 +104,15 @@
     "affiliation": null,
     "publisherNameBn": "বিডিনিউজ টোয়েন্টিফোর বাংলা",
     "publisherNameEn": "bdnews24 Bangla",
+    "role": "AUTHOR",
+    "articleCount": 1
+  },
+  {
+    "authorId": "d48b60ddcccbf713be51",
+    "name": "ফিলিপ গাইন ও ফাহমিদা আফরোজ নাদিয়া",
+    "affiliation": null,
+    "publisherNameBn": "দ্য ডেইলি স্টার (বাংলা)",
+    "publisherNameEn": "The Daily Star Bangla",
     "role": "AUTHOR",
     "articleCount": 1
   },
