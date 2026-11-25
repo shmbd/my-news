@@ -6,7 +6,7 @@
     "publisherNameBn": "দৈনিক আজাদী",
     "publisherNameEn": "Dainik Azadi",
     "role": "AUTHOR",
-    "articleCount": 2
+    "articleCount": 3
   },
   {
     "authorId": "882f2f781cf600917d09",
@@ -47,6 +47,15 @@
   {
     "authorId": "45600b8172b1c771562d",
     "name": "এম এম মুসা",
+    "affiliation": null,
+    "publisherNameBn": "বিডিনিউজ টোয়েন্টিফোর বাংলা",
+    "publisherNameEn": "bdnews24 Bangla",
+    "role": "AUTHOR",
+    "articleCount": 1
+  },
+  {
+    "authorId": "140f9f6a5757c87e2e9e",
+    "name": "জান্নাতুল রুহী",
     "affiliation": null,
     "publisherNameBn": "বিডিনিউজ টোয়েন্টিফোর বাংলা",
     "publisherNameEn": "bdnews24 Bangla",
@@ -131,6 +140,15 @@
     "affiliation": null,
     "publisherNameBn": "সমকাল",
     "publisherNameEn": "Samakal",
+    "role": "AUTHOR",
+    "articleCount": 1
+  },
+  {
+    "authorId": "0d65cfbde6523a5c1782",
+    "name": "সাজ্জাদ সাব্বির",
+    "affiliation": null,
+    "publisherNameBn": "বিডিনিউজ টোয়েন্টিফোর বাংলা",
+    "publisherNameEn": "bdnews24 Bangla",
     "role": "AUTHOR",
     "articleCount": 1
   }
