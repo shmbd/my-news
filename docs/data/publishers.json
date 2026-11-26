@@ -82,7 +82,7 @@
     "collectionMethods": [
       "RSS_ATOM"
     ],
-    "collectedCount": 10
+    "collectedCount": 12
   },
   {
     "publisherId": "desh_rupantor",
@@ -125,7 +125,7 @@
       "RSS_ATOM",
       "SECTION_HTML_JSONLD"
     ],
-    "collectedCount": 9
+    "collectedCount": 10
   },
   {
     "publisherId": "daily_star_en",
@@ -167,7 +167,7 @@
     "collectionMethods": [
       "RSS_ATOM"
     ],
-    "collectedCount": 15
+    "collectedCount": 17
   },
   {
     "publisherId": "sarabangla",
@@ -391,7 +391,7 @@
     "collectionMethods": [
       "SECTION_HTML_JSONLD"
     ],
-    "collectedCount": 8
+    "collectedCount": 10
   },
   {
     "publisherId": "kaler_kantho",
