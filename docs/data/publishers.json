@@ -125,7 +125,7 @@
       "RSS_ATOM",
       "SECTION_HTML_JSONLD"
     ],
-    "collectedCount": 8
+    "collectedCount": 9
   },
   {
     "publisherId": "daily_star_en",
@@ -167,7 +167,7 @@
     "collectionMethods": [
       "RSS_ATOM"
     ],
-    "collectedCount": 13
+    "collectedCount": 15
   },
   {
     "publisherId": "sarabangla",
@@ -250,7 +250,7 @@
       "RSS_ATOM",
       "SECTION_HTML_JSONLD"
     ],
-    "collectedCount": 3
+    "collectedCount": 6
   },
   {
     "publisherId": "samakal",
