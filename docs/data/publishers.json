@@ -82,7 +82,7 @@
     "collectionMethods": [
       "RSS_ATOM"
     ],
-    "collectedCount": 12
+    "collectedCount": 14
   },
   {
     "publisherId": "desh_rupantor",
@@ -167,7 +167,7 @@
     "collectionMethods": [
       "RSS_ATOM"
     ],
-    "collectedCount": 17
+    "collectedCount": 18
   },
   {
     "publisherId": "sarabangla",
@@ -250,7 +250,7 @@
       "RSS_ATOM",
       "SECTION_HTML_JSONLD"
     ],
-    "collectedCount": 6
+    "collectedCount": 10
   },
   {
     "publisherId": "samakal",
