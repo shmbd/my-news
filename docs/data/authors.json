@@ -15,7 +15,7 @@
     "publisherNameBn": "দ্য ডেইলি স্টার (বাংলা)",
     "publisherNameEn": "The Daily Star Bangla",
     "role": "AUTHOR",
-    "articleCount": 2
+    "articleCount": 3
   },
   {
     "authorId": "7f43e2bc3e32d84bbd0b",
@@ -194,6 +194,15 @@
     "affiliation": null,
     "publisherNameBn": "দ্য ডেইলি স্টার (বাংলা)",
     "publisherNameEn": "The Daily Star Bangla",
+    "role": "AUTHOR",
+    "articleCount": 1
+  },
+  {
+    "authorId": "949e94e8409eaade7c30",
+    "name": "লুবনা ফেরদৌসী",
+    "affiliation": null,
+    "publisherNameBn": "বিডিনিউজ টোয়েন্টিফোর বাংলা",
+    "publisherNameEn": "bdnews24 Bangla",
     "role": "AUTHOR",
     "articleCount": 1
   },
