@@ -6,11 +6,20 @@
     "publisherNameBn": "দৈনিক আজাদী",
     "publisherNameEn": "Dainik Azadi",
     "role": "AUTHOR",
-    "articleCount": 3
+    "articleCount": 4
   },
   {
     "authorId": "7a303934b7fafb58a965",
     "name": "তানিম আহমেদ",
+    "affiliation": null,
+    "publisherNameBn": "দ্য ডেইলি স্টার (বাংলা)",
+    "publisherNameEn": "The Daily Star Bangla",
+    "role": "AUTHOR",
+    "articleCount": 2
+  },
+  {
+    "authorId": "7f43e2bc3e32d84bbd0b",
+    "name": "মাহফুজ আনাম",
     "affiliation": null,
     "publisherNameBn": "দ্য ডেইলি স্টার (বাংলা)",
     "publisherNameEn": "The Daily Star Bangla",
@@ -135,6 +144,15 @@
     "articleCount": 1
   },
   {
+    "authorId": "c2a42d367bbcba50f782",
+    "name": "প্রণব মজুমদার",
+    "affiliation": null,
+    "publisherNameBn": "বিডিনিউজ টোয়েন্টিফোর বাংলা",
+    "publisherNameEn": "bdnews24 Bangla",
+    "role": "AUTHOR",
+    "articleCount": 1
+  },
+  {
     "authorId": "d48b60ddcccbf713be51",
     "name": "ফিলিপ গাইন ও ফাহমিদা আফরোজ নাদিয়া",
     "affiliation": null,
@@ -173,15 +191,6 @@
   {
     "authorId": "f7276e9404553fc48a92",
     "name": "মহিউদ্দিন আহমদ",
-    "affiliation": null,
-    "publisherNameBn": "দ্য ডেইলি স্টার (বাংলা)",
-    "publisherNameEn": "The Daily Star Bangla",
-    "role": "AUTHOR",
-    "articleCount": 1
-  },
-  {
-    "authorId": "7f43e2bc3e32d84bbd0b",
-    "name": "মাহফুজ আনাম",
     "affiliation": null,
     "publisherNameBn": "দ্য ডেইলি স্টার (বাংলা)",
     "publisherNameEn": "The Daily Star Bangla",
