@@ -6,7 +6,7 @@
     "publisherNameBn": "দৈনিক আজাদী",
     "publisherNameEn": "Dainik Azadi",
     "role": "AUTHOR",
-    "articleCount": 4
+    "articleCount": 5
   },
   {
     "authorId": "7a303934b7fafb58a965",
@@ -16,6 +16,15 @@
     "publisherNameEn": "The Daily Star Bangla",
     "role": "AUTHOR",
     "articleCount": 3
+  },
+  {
+    "authorId": "9f3e7c50cbd819125d01",
+    "name": "বিধান চন্দ্র পাল",
+    "affiliation": null,
+    "publisherNameBn": "বিডিনিউজ টোয়েন্টিফোর বাংলা",
+    "publisherNameEn": "bdnews24 Bangla",
+    "role": "AUTHOR",
+    "articleCount": 2
   },
   {
     "authorId": "7f43e2bc3e32d84bbd0b",
@@ -135,6 +144,15 @@
     "articleCount": 1
   },
   {
+    "authorId": "b3905d7b36906015f63b",
+    "name": "নাদিম মাহমুদ",
+    "affiliation": null,
+    "publisherNameBn": "বিডিনিউজ টোয়েন্টিফোর বাংলা",
+    "publisherNameEn": "bdnews24 Bangla",
+    "role": "AUTHOR",
+    "articleCount": 1
+  },
+  {
     "authorId": "7ed5c726a53b60df8424",
     "name": "পপি দেবী থাপা",
     "affiliation": null,
@@ -167,15 +185,6 @@
     "affiliation": null,
     "publisherNameBn": "সমকাল",
     "publisherNameEn": "Samakal",
-    "role": "AUTHOR",
-    "articleCount": 1
-  },
-  {
-    "authorId": "9f3e7c50cbd819125d01",
-    "name": "বিধান চন্দ্র পাল",
-    "affiliation": null,
-    "publisherNameBn": "বিডিনিউজ টোয়েন্টিফোর বাংলা",
-    "publisherNameEn": "bdnews24 Bangla",
     "role": "AUTHOR",
     "articleCount": 1
   },
